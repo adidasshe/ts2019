@@ -22,12 +22,12 @@ import {
 } from '../mock'
 
 //开发模式使用mock数据
-// if (process.env.NODE_ENV === 'development') {
-//   mockXHR()
-// }
+if (process.env.NODE_ENV === 'development') {
+  mockXHR()
+}
 
-
-mockXHR()
+//全局使用mock
+// mockXHR()
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium' // set element-ui default size
